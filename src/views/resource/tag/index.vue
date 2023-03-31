@@ -75,7 +75,7 @@
             <el-input autocomplete="off" v-model="tagForm.id" disabled/>
           </el-form-item>
           <el-form-item label="标签名称" label-width="100px" prop="name">
-            <el-input autocomplete="off" v-model="tagForm.name"/>
+            <el-input autocomplete="off" v-model="tagForm.name" disabled/>
           </el-form-item>
           <el-form-item label="标签描述" label-width="100px">
             <el-input autocomplete="off" v-model="tagForm.introduction"/>
@@ -127,7 +127,7 @@ export default {
         image: '',
         introduction: ''
       },
-      URL: process.env.VUE_APP_BASE_API  + 'api/upload',
+      URL: 'http://8.134.222.37:8081/api/upload',
       headerObj:{
         Authorization: `Bearer ${getToken()}`
       },
